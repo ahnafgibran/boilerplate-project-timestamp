@@ -35,7 +35,7 @@ app.get('/api/:date?', (req, res) => {
                 return;
             }
         } else {
-            date = new Date(unixTimestamp * 1000);
+            date = new Date(unixTimestamp);
         }
     } else {
         date = new Date();
